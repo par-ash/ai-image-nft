@@ -1,8 +1,8 @@
 const hre = require("hardhat");
 
 async function main() {
-  const NAME = "AI Generated NFT"
-  const SYMBOL = "AINFT"
+  const NAME = "AZL - AI NFT"
+  const SYMBOL = "AZNFT"
   const COST = ethers.utils.parseUnits("0.05", "ether") // 1 ETH
 
   const NFT = await hre.ethers.getContractFactory("NFT")
@@ -18,3 +18,5 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
+// Deployed NFT Contract at: 0x04AED789524E73Bc28e248C006921FA94c86Cbd3
